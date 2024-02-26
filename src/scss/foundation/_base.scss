@@ -1,0 +1,37 @@
+@use "../foundation/font" as *;
+
+
+$main-color-bg: #FBF8F1;
+$main-Color: #669934;
+$sub-Color1: #144B03;
+$sub-Color2: #DAE3;
+$sub-Color3: #81BE47;
+
+.green {
+    color: $main-Color;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: "M PLUS 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    background: $main-color-bg;
+    counter-reset: number 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+    font-size: 62.5%;
+    letter-spacing: .2rem;
+
+}
+
+a {
+    cursor: pointer;
+}

@@ -1,0 +1,81 @@
+@use "../foundation/base" as *;
+@use "../foundation/mixin" as *;
+
+
+.l-hero {
+    &__container {
+        max-width: calc(800px + 2rem);
+        margin-inline: auto;
+        padding: 1rem;
+    }
+
+    @include sp {
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
+}
+
+.l-trouble {
+    &__container {
+        max-width: calc(1000px + 2rem);
+        margin-inline: auto;
+        padding: 1rem;
+    }
+
+    @include sp {
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
+}
+
+.l-about {
+    &__container {
+        max-width: calc(1420px + 2rem);
+        margin-inline: auto;
+    }
+
+    @include sp {
+        padding: 0;
+    }
+}
+
+
+
+.l-service {
+    &__container {
+        max-width: calc(1420px + 2rem);
+        margin-inline: auto;
+        padding: 1rem;
+    }
+
+    @include sp {
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
+}
+
+.l-period{
+    &__container {
+        max-width: calc(1200px + 2rem);
+        margin-inline: auto;
+        padding: 1rem;
+
+        @include sp {
+            max-width: 100%;
+            padding-inline: 1rem;
+        }
+    }
+}
+
+.l-works {
+    &__container {
+        max-width: calc(1420px + 2rem);
+        margin-inline: auto;
+        padding: 1rem;
+
+        @include sp {
+            max-width: 100%;
+            padding-inline: 1rem;
+        }
+    }
+}

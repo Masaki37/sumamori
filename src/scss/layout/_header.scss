@@ -1,0 +1,91 @@
+///--------------header strat-----------------///
+@use "../foundation/base" as *;
+@use "../foundation/mixin" as *;
+
+
+
+
+.l-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 130px;
+    background: #FBF8F1;
+    border-radius: 0 0 100px 0;
+    z-index: 9999;
+
+    &__inquiry {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+
+        img {
+            width: 295px;
+        }
+    }
+
+    &__logo {
+        padding: 40px 0 0 40px;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    @include sp {
+        width: 200px;
+        height: 80px;
+
+        &__inquiry {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+
+            img {
+                width: 245px;
+
+                @include sp {
+                    width: 152px;
+                    height: 140px;
+                }
+            }
+        }
+
+        &__logo {
+            padding: 20px 0 0 30px;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    // &__sp {
+    //     display: none;
+
+    //     @include sp {
+    //         position: fixed;
+    //         bottom: 0;
+    //         left: 0;
+    //         display: flex;
+    //         width: 100%;
+    //         z-index: 999;
+
+
+    //         &- {
+    //             display: block;
+    //             width: 152px;
+    //             height: 140px;
+    //             position: absolute;
+    //             bottom: 0;
+    //             right: 0;
+    //             z-index: 2;
+    //         }
+    //     }
+    // }
+}
+
+///--------------pc header start-----------------///

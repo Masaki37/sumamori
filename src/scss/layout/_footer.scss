@@ -1,0 +1,97 @@
+///--------------header strat-----------------///
+@use "../foundation/base" as *;
+@use "../foundation/mixin" as *;
+
+
+footer {
+    margin-top: 10rem;
+    width: 100%;
+    background-image: url(../../src/img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    .l-footer {
+
+        padding: 5rem 0;
+
+        &__ttlwrap {
+            text-align: center;
+            font-weight: bold;
+            padding-top: 5rem;
+
+            &-ttl {
+                font-size: 5.6rem;
+                color: black;
+            }
+
+            p {
+                font-size: 2.4rem;
+                margin-top: .5rem;
+            }
+
+            &-text {
+                margin-top: 5rem;
+                font-size: 2.4rem;
+                line-height: 4rem;
+            }
+        }
+
+        &-button {
+            width: 50%;
+            margin: 0 auto;
+            padding: 5rem 0 4rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__copywriter {
+            text-align: center;
+            font-weight: bold;
+            font-size: 2.4rem;
+        }
+
+        @include sp {
+            width: 90%;
+            margin: 0 auto;
+            padding: 5rem 0 2rem 0;
+
+            &__ttlwrap {
+                text-align: center;
+                font-weight: bold;
+                padding-top: 5rem;
+
+                &-ttl {
+                    font-size: 3.2rem;
+                    color: black;
+                }
+
+                p {
+                    font-size: 2.4rem;
+                    margin-top: .5rem;
+                }
+
+                &-text {
+                    margin-top: 3rem;
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                }
+            }
+
+            &-button {
+                width: 80%;
+                margin: 0 auto;
+                padding: 5rem 0 5rem 0;
+                display: block;
+            }
+
+            &__copywriter {
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+
+}

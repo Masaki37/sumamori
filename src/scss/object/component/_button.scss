@@ -1,0 +1,183 @@
+@use "../../foundation/base" as *;
+@use "../../foundation/mixin" as *;
+
+.c-button {
+    width: 50%;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 2.4rem;
+    border-radius: 100px;
+    transition: .5s all;
+
+    @include sp {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+
+        &:first-child {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+a {
+    display: inline-block;
+}
+
+.inquiry {
+    background: $main-Color;
+    color: $main-color-bg;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background-image: url(../../src/img/button__inquiry.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 998;
+    }
+
+    &:hover {
+        background: $main-color-bg;
+        color: $main-Color;
+        border: 1px solid $main-Color;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-image: url(../../src/img/button__consultation.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 998;
+        }
+    }
+
+    @include sp {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+            width: 25px;
+            height: 25px;
+            background-image: url(../../src/img/button__inquiry.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 998;
+        }
+
+        &:hover {
+            background: $main-color-bg;
+            color: $main-Color;
+            border: 1px solid $main-Color;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(-50%, -50%);
+                width: 25px;
+                height: 25px;
+                background-image: url(../../src/img/button__consultation.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: 998;
+            }
+        }
+
+    }
+}
+
+
+.consultation {
+    background: $main-color-bg;
+    color: $main-Color;
+    border: 1px solid $main-Color;
+    position: relative;
+    z-index: 998;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background-image: url(../../src/img/button__consultation.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 998;
+    }
+
+    &:hover {
+        background: $main-Color;
+        color: $main-color-bg;
+        z-index: 998;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-image: url(../../src/img/button__inquiry.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 998;
+        }
+    }
+
+    @include sp {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+            width: 25px;
+            height: 25px;
+            background-image: url(../../src/img/button__consultation.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 998;
+        }
+
+        &:hover {
+            background: $main-Color;
+            color: $main-color-bg;
+            z-index: 998;
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(-50%, -50%);
+                width: 25px;
+                height: 25px;
+                background-image: url(../../src/img/button__inquiry.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: 998;
+            }
+        }
+
+    }
+}

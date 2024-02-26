@@ -1,0 +1,26 @@
+@use "../../foundation/base" as *;
+@use "../../foundation/mixin" as *;
+
+.u-mt1 {
+    margin-top: 1rem;
+}
+
+.u-mt5 {
+    margin-top: 5rem;
+
+    @include sp {
+        margin-top: 3rem;
+    }
+}
+
+.u-mt25 {
+    margin-top: 20rem;
+
+    @include sp {
+        margin-top: 10rem;
+    }
+}
+
+.u-mr5 {
+    margin-right: 5rem;
+}
